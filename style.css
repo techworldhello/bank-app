@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body::before { 
+	content: "";
+	background: url('images/water-img.png');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	opacity: 0.7;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+
+header {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+@media (max-width:800px){
+  main, header{
+    flex-direction: column;
+  }
+}
+
+h1 {
+	font-size: 3.5em;
+	color: #282828;
+	font-weight: lighter;
+}
+
+#logo {
+	animation: swing 5s Infinite ease;
+	width: 15%;
+	position: absolute;
+	bottom: 22em;
+	left: 4em;
+}
+
+@keyframes swing {
+  0%{ transform: rotate(-5deg);}
+  50%{ transform: rotate(10deg);}
+  100%{ transform: rotate(-5deg);}
+}
+
+.checking-acc, .savings-acc {
+	background-color: #C0C0C0;
+	padding: .5em;
+	height: 20em;
+	width: 20em;
+	margin: 3em;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.savings-result, .checking-result {
+	font-size: 2.5em;
+	margin: .3em;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	color: #00468B;
+}
+
+.button-div {
+	display: flex;
+	margin-top: 1.5em;
+	justify-content: space-around;
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	height: 3em;
+	width: 8em;
+	outline:none;
+}
+
+button:hover {
+	background-color: #F0E68C;
+}
+
+button:active {
+  background-color: #F0E68C;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+.savings-input, .checking-input {
+	background-color: #B0E0E6;
+	border-radius: 10px;
+	height: 3.5em;
+	border: none;
+}
+
+::placeholder {
+	color: white;
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+input { 
+    text-align: center; 
+    font-size: 14px;
+}
+
+#message {
+	margin-top: 150px;
+	margin-right: 100px;
+	text-align: right; 
+    font-size: 24px;
+    font-weight: bold;
+    color: orangered;
+}

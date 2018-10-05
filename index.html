@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<img id="logo" src="images/money-boat.png" alt="logo">
+			<h1>Liquid Bank</h1>
+		</header>
+		<main>
+			<section class="checking-acc">
+				<h2>Checking</h2>
+				<p>Your balance is ... </p>
+				<div class="checking-result">$00.00</div>
+				<input type="number" class="checking-input" placeholder="give me money">
+				<div class="button-div">
+					<button id="checking-deposit">Deposit</button>
+					<button id="checking-withdraw">Withdraw</button>
+					<button id="checking-transfer">Transfer</button>
+				</div>
+			</section>
+			<section class="savings-acc">
+				<h2>Savings</h2>
+				<p>Your balance is ... </p>
+				<div class="savings-result">$00.00</div>
+				<input type="number" class="savings-input" placeholder="more is more">
+				<div class="button-div">
+					<button id="savings-deposit">Deposit</button>
+					<button id="savings-transfer">Transfer</button>
+				</div>
+			</section>
+		</main>
+		<span id="message"></span>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
